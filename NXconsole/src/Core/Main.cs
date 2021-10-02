@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using NXconsole.src.Apps;
+using NXconsole.src.Helpers;
 using NXconsole.src.Utils;
 
 namespace NXconsole.src.Core
@@ -14,7 +14,11 @@ namespace NXconsole.src.Core
 
         public void Start()
         {
+            SystemLogger.LogPackageInit("Init Apps");
+            m_AppHandler.InitApps();
 
+
+            Console.Clear();
             //Start Main Loop
             Update();
         }
@@ -26,7 +30,7 @@ namespace NXconsole.src.Core
                 //Login Box
                 if (!m_LHelper.logged_in)
                 {
-                    if(m_LHelper.LoginPrompt() == "0542519")
+                    if(m_LHelper.LoginPrompt() == "admin")
                     {
                         m_LHelper.logged_in = true;
                         Console.Clear();
@@ -40,8 +44,20 @@ namespace NXconsole.src.Core
                 }
 
                 //Main Console System
-                Console.Write("Admin@NX > ");
-                m_AppHandler.HandleAppRequest(Console.ReadLine());
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.Write("admin");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("@");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.Write("NX");
+                Console.ForegroundColor = ConsoleColor.Gray;
+                Console.Write("> ");
+
+                Console.ForegroundColor = ConsoleColor.Gray;
+                string consoleInput = Console.ReadLine();
+                Console.ResetColor();
+
+                m_AppHandler.HandleAppRequest(consoleInput);
             }
         }
     }
