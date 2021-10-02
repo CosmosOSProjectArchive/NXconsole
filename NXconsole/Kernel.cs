@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 using NXconsole.src.Core;
-using NXconsole.src.Apps;
 using NXconsole.src.Utils;
 using Sys = Cosmos.System;
 using Cosmos.System.Graphics;
@@ -12,21 +11,15 @@ namespace NXconsole
 {
     public class Kernel : Sys.Kernel
     {
-        Canvas canvas;
-
         protected override void BeforeRun()
         {
-            SystemLogger.LogPackageInit("Root System");
-            SystemLogger.LogPackageInit("C# System");
-
-            SystemLogger.LogPackageInit("GUI Canvas");
-
-
-            Console.Clear();
+            SystemLogger.LogPackageInit("[BeforeRun] Root System");
+            SystemLogger.LogPackageInit("[BeforeRun] C# System");
+            SystemLogger.LogPackageInit("[BeforeRun] Graphics Driver");
         }
         protected override void AfterRun()
         {
-            SystemLogger.LogPackageShutdown("Root System");
+            Console.Clear();
         }
 
 
