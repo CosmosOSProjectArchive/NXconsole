@@ -1,0 +1,7 @@
+﻿# Variables
+0	-	False
+1	-	True
+
+# Packages
+2	-	Package Started Successfully
+3	-	Package Shutdown Successfully
