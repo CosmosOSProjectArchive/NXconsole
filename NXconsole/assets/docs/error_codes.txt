@@ -1,0 +1,1 @@
+﻿CALLED_BEFFOR_INIT	-	A function was called before it's content was initialized

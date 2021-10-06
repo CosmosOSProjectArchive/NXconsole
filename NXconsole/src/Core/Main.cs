@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using NXconsole.src.Helpers;
 using NXconsole.src.Utils;
+using NXconsole.src.Filesystem;
 
 namespace NXconsole.src.Core
 {
@@ -17,8 +18,10 @@ namespace NXconsole.src.Core
             SystemLogger.LogPackageInit("Init Apps");
             m_AppHandler.InitApps();
 
+            SystemLogger.LogPackageInit("Filesystem");
+            FilesystemMaster.Instance.Init();
 
-            Console.Clear();
+            //Console.Clear();
             //Start Main Loop
             Update();
         }

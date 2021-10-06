@@ -25,13 +25,14 @@ namespace NXconsole.src.Utils
             Console.WriteLine(msg);
             Console.ResetColor();
         }
-        public static void Exeption(string msg)
+        public static void Exeption(string code, string msg)
         {
             Console.Clear();
 
             Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.Red;
             Console.WriteLine(msg);
+            Console.WriteLine("\n\nError Code: "+code);
             Console.ResetColor();
 
             Console.WriteLine();

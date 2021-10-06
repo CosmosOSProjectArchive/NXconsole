@@ -16,3 +16,4 @@ C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.csproj.CoreCompileInputs.cache
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.dll
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.pdb
+C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.csproj.AssemblyReference.cache

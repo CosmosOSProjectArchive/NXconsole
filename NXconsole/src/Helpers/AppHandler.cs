@@ -14,7 +14,9 @@ namespace NXconsole.src.Helpers
         public void InitApps()
         {
             //Register Apps
-            m_AppList.Add(new Clear());         m_AppListNames.Add("clear");
+            m_AppList.Add(new Clear());         m_AppListNames.Add("clear");                                        //Clear The Console
+            m_AppList.Add(new df());         m_AppListNames.Add("df");                                              //Display Disk Info
+            m_AppList.Add(new create_fs());         m_AppListNames.Add("create_fs");                                //Create the filesystem
         }
 
         public void HandleAppRequest(string request)
