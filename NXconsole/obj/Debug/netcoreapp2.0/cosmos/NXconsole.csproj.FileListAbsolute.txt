@@ -1,12 +1,3 @@
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\bin\Debug\netcoreapp2.0\cosmos\NXconsole.deps.json
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\bin\Debug\netcoreapp2.0\cosmos\NXconsole.dll
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\bin\Debug\netcoreapp2.0\cosmos\NXconsole.pdb
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.csprojAssemblyReference.cache
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.AssemblyInfoInputs.cache
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.AssemblyInfo.cs
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.csproj.CoreCompileInputs.cache
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.dll
-C:\Users\RUBEN\Desktop\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.pdb
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\bin\Debug\netcoreapp2.0\cosmos\NXconsole.deps.json
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\bin\Debug\netcoreapp2.0\cosmos\NXconsole.dll
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\bin\Debug\netcoreapp2.0\cosmos\NXconsole.pdb
@@ -16,4 +7,3 @@ C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.csproj.CoreCompileInputs.cache
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.dll
 C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.pdb
-C:\Workspace\NX\NXconsole\OS\NXconsole\NXconsole\obj\Debug\netcoreapp2.0\cosmos\NXconsole.csproj.AssemblyReference.cache

@@ -1,1 +1,3 @@
-﻿CALLED_BEFFOR_INIT	-	A function was called before it's content was initialized
+﻿GENERIC_EXEPTION	-	Anything cought in a exeption function
+CALLED_BEFFOR_INIT	-	A function was called before it's content was initialized
+FATAL_COMMAND	    -	A command called/retured a fatal fuction

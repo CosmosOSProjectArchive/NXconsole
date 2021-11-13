@@ -23,7 +23,13 @@ namespace NXconsole.src.Helpers
         {
             if(!String.IsNullOrEmpty(request) && m_AppListNames.Contains(request))
             {
-                m_AppList[m_AppListNames.IndexOf(request)].Execute();
+                try
+                {
+                    m_AppList[m_AppListNames.IndexOf(request)].Execute();
+                } catch {
+                    Logger.Exeption("FATAL_COMMAND", "Command executed fatal function");
+                }
+
             }
             else if (String.IsNullOrEmpty(request)) {
                 return;
