@@ -11,7 +11,7 @@ namespace NXconsole.src.Apps
 
         }
 
-        public override void Execute()
+        public override void Execute(string[] p_Args)
         {
             Console.Clear();
         }

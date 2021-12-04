@@ -21,12 +21,12 @@ namespace NXconsole.src.Core
             SystemLogger.LogPackageInit("Filesystem");
             FilesystemMaster.Instance.Init();
 
-            //Console.Clear();
+            Console.Clear();
             //Start Main Loop
-            Update();
+            OnUpdate();
         }
 
-        public void Update()
+        public void OnUpdate()
         {
             while(true)
             {

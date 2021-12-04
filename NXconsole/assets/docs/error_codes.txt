@@ -1,3 +1,5 @@
 ﻿GENERIC_EXEPTION	-	Anything cought in a exeption function
 CALLED_BEFFOR_INIT	-	A function was called before it's content was initialized
 FATAL_COMMAND	    -	A command called/retured a fatal fuction
+FATAL_FUNCTION	    -	A function was called that returned a fatal result
+INVALID_RESPONCE	-	A data value was called that returned an invalid result

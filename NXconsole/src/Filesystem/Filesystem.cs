@@ -30,6 +30,7 @@ namespace NXconsole.src.Filesystem
         /// Master Class
         /////////////////
         public Sys.FileSystem.CosmosVFS m_Fs;
+        public string m_CurrentDirectory;
         public bool FS_started = false;
 
         public void Init()
@@ -37,28 +38,29 @@ namespace NXconsole.src.Filesystem
             m_Fs = new Sys.FileSystem.CosmosVFS();
             Sys.FileSystem.VFS.VFSManager.RegisterVFS(m_Fs);
 
+            m_CurrentDirectory = "\\";
+
+            try
+            {
+                switch (Sys.FileSystem.VFS.VFSManager.IsValidDriveId(@"0:\"))
+                {
+                    case true:
+                        SystemLogger.LogPackageInit("Filesystem checks, valid");
+                        break;
+
+                    case false:
+                        Logger.LogError("Invalid Filesystem, some features will not work");
+                        break;
+
+                    default:
+                        Logger.Exeption("INVALID_RESPONCE", "Failed to check the file system");
+                        break;
+                }
+            } catch {
+                Logger.Exeption("FATAL_FUNCTION", "Invalid drive ID");
+            }
+
             FS_started = true;
         }
-
-        public void CreateFS()
-        {
-            if (!FS_started){ Logger.Exeption("CALLED_BEFFOR_INIT", "A function in 'FilesystemMaster' called before VFS initialization"); }
-
-            m_Fs.Format("0" /*drive id*/, "FAT32" /*fat type*/, true /*use quick format*/);
-
-            Console.WriteLine("A restart is required.\n");
-            Console.WriteLine("Press ENTER To Restart...");
-
-            bool Wait = true;
-            while (Wait)
-            {
-                if (Console.ReadLine().Equals(""))
-                {
-                    Wait = false;
-                    Sys.Power.Reboot();
-                }
-            }
-        }
-
     }
 }

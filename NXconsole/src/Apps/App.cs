@@ -7,6 +7,6 @@ namespace NXconsole.src.Apps
     class App
     {
         public virtual void Init() { }
-        public virtual void Execute() { }
+        public virtual void Execute(string[] p_Args) { }
     }
 }
